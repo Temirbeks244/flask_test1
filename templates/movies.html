@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmler - Film ve Dizi Dünyası</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar { background-color: #1a1a1a; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .movie-card { transition: transform 0.3s; }
+        .movie-card:hover { transform: scale(1.03); }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">FilmDizi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/movies">Filmler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/series">Diziler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">Hakkımızda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="mb-4">Popüler Filmler</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card movie-card">
+                    <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Film 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Oppenheimer</h5>
+                        <p class="card-text">J. Robert Oppenheimer'ın atom bombasını geliştirme sürecini anlatan epik film.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">2023</span>
+                            <span class="badge bg-success">8.9/10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card movie-card">
+                    <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Film 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Barbie</h5>
+                        <p class="card-text">Barbie'nin gerçek dünyaya yolculuğunu anlatan fantastik komedi.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">2023</span>
+                            <span class="badge bg-success">7.8/10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card movie-card">
+                    <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Film 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dune: Part Two</h5>
+                        <p class="card-text">Paul Atreides'in Arrakis'teki macerasının devamı.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">2024</span>
+                            <span class="badge bg-success">8.5/10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 FilmDizi. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
